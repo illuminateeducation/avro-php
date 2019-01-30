@@ -17,7 +17,7 @@ systems as `php5-gmp` and `phpunit`, respectively.
 Getting started
 ---------------
 ```
-$ composer require wikimedia/avro
+$ composer require illuminateeducation/avro-php
 ```
 
 History
