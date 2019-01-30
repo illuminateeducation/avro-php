@@ -302,6 +302,31 @@ class AvroDataIOReader
   }
 
   /**
+   * Read data iteratively
+   * @return array
+   */
+  public function readRecord()
+  {
+      if (0 == $this->block_count)
+      {
+          if ($this->is_eof())
+              return null;
+
+          if ($this->skip_sync())
+              if ($this->is_eof())
+                  return null;
+
+          $this->read_block_header();
+      }
+
+      $data = $this->datum_reader->read($this->decoder);
+
+      $this->block_count -= 1;
+
+      return $data;
+  }
+
+  /**
    * Closes this writer (and its AvroIO object.)
    * @uses AvroIO::close()
    */

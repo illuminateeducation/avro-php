@@ -3,7 +3,7 @@ What the Avro PHP library is
 
 A library for using [Avro](http://avro.apache.org/) with PHP.
 
-This is a fork of wikimedia/avro-php. AvroDataIoReader is only able to read avro files into memory and the class isn't easily extensible. This fork will add accessors so that iterative reading is possible.
+This is a fork of wikimedia/avro-php. It adds iterative method readRecord() to AvroDataIoReader
 
 Requirements
 ------------
