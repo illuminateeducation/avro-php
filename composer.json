@@ -1,6 +1,6 @@
 {
-	"name": "wikimedia/avro",
-	"description": "A library for using Apache Avro with PHP.",
+	"name": "illuminateeducation/avro-php",
+	"description": "A library for using Apache Avro with PHP, based on wikimedia/avro",
 	"keywords": ["serialization"],
 	"homepage": "https://avro.apache.org/",
 	"license": "Apache-2.0",
